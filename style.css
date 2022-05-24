@@ -1,0 +1,64 @@
+/* Page Background */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: skyblue; 
+} 
+/* Whole Box */
+.container{
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    box-shadow: 0 15px 35px rgba(50, 50, 50, 0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+}
+/* Dice Only */
+.dice-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Dice Total */
+p{
+    font-size: 22px;
+    margin: 30px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* Roll The Dice Button */
+button{
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+/* Dice Animation */
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(540deg);
+    }
+    50%{
+        transform: rotate(-540deg);
+    }
+    100%{
+        transform: rotate(540deg);
+    }
+}
